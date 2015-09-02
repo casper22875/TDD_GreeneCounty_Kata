@@ -20,7 +20,7 @@ def test_second_element_in_array_is_2
 
 def test_last_element_in_array_is_100
 	results = greene_county
-	assert_equal(100, results[-1])
+	assert_equal("county", results[-1])
 	end
 
 def test_third_element_in_array_is_Greene
@@ -33,4 +33,15 @@ def test_every_third_element_in_array_are_greene
 	assert_equal("greene", results[-2])
 	assert_equal("greene", results[56])
 	end
+	
+def test_every_fifth_element_in_array_are_greene
+		results = greene_county
+		assert_equal("county", results[4])
+		assert_equal("county", results[-6])
+		end
+	
+	
+	
+	
+	
 	end
