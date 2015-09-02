@@ -28,18 +28,23 @@ def test_third_element_in_array_is_Greene
 	assert_equal("greene", results[2])
 	end
 	
-def test_every_third_element_in_array_are_greene
+def test_every_third_element_in_array_is_greene
 	results = greene_county
 	assert_equal("greene", results[-2])
 	assert_equal("greene", results[56])
 	end
 	
-def test_every_fifth_element_in_array_are_greene
+def test_every_fifth_element_in_array_is_county
 		results = greene_county
 		assert_equal("county", results[4])
 		assert_equal("county", results[-6])
 		end
-	
+
+def 	test_every_element_divisible_by_three_and_five
+		results = greene_county
+		assert_equal("GreeneCounty", results[-11])
+		assert_equal("GreeneCounty", results[14])
+		end
 	
 	
 	
